@@ -1,0 +1,16 @@
+:root {
+  --body-text: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  --code-text: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+
+  --background-color: #c7cce3;
+  --components-background-color: #eeeff2;
+  --white-color: #fff;
+  --black-color: #212121;
+  --grey-color: #404040;
+  --royal-blue-color: #4169e1;
+  --online-color: #00aa00;
+  --offline-color: #ff5757;
+}
