@@ -19,12 +19,12 @@
   background-color: var(--grey-color);
 }
 
-.status--online {
+.online {
   composes: status;
   background-color: var(--online-color);
 }
 
-.status--offline {
+.offline {
   composes: status;
   background-color: var(--offline-color);
 }

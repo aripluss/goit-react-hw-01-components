@@ -4,9 +4,11 @@ import css from './FriendListItem.module.css';
 function FriendListItem({ avatar, name, isOnline }) {
   return (
     <li className={css.item}>
-      <span
-        className={isOnline ? css['status--online'] : css['status--offline']}
-      ></span>
+      <span className={isOnline ? css.online : css.offline}></span>
+
+      {/* <span
+        className={isOnline ? css['status-online'] : css['status-offline']}
+      ></span> */}
       <img
         className={css.avatar}
         src={avatar}
@@ -20,11 +22,9 @@ function FriendListItem({ avatar, name, isOnline }) {
 }
 
 FriendListItem.propTypes = {
-  friend: PropTypes.shape({
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired,
-  }).isRequired,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
 };
 
 export default FriendListItem;

@@ -4,15 +4,19 @@ import css from './FriendList.module.css';
 
 function FriendList({ friends }) {
   return (
-    <ul className={css['friend-list']}>
-      {friends.map(({ id, avatar, name, isOnline }) => (
+    <ul className={css.friend_list}>
+      {/* {friends.map(({ id, avatar, name, isOnline }) => (
         <FriendListItem
           key={id}
           avatar={avatar}
           name={name}
           isOnline={isOnline}
         />
-      ))}
+      ))} */}
+
+      {friends.map(({ id, ...otherProps }) => {
+        return <FriendListItem key={id} {...otherProps} />;
+      })}
 
       {/* Pass with one props:
       {friends.map(({ id, ...friend }) => {
